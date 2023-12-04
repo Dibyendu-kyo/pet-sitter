@@ -1,0 +1,20 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: '\2713'; /* Unicode character for a checkmark */
+    font-size: 20px;
+    color: #2ecc71; /* Green color for the checkmark */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
