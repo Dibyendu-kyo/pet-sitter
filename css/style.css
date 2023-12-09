@@ -9713,6 +9713,24 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /********** Custom CSS ************/
 h1,
 h2 {
@@ -9892,4 +9910,10 @@ h6 {
 }
 .footer{
   text-align: center;
+}
+.footer a{
+  color: #000;
+}
+.footer p{
+  color: #000;
 }
