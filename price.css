@@ -1,20 +1,78 @@
-ul {
-    list-style: none;
-    padding: 0;
-}
+/* Define keyframes for spreadIn animation */
+@keyframes spreadIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply spreadIn animation to card elements */
+  .text-gray-600 .rounded-lg {
+    animation: spreadIn 1s ease-out;
+  }
+  
+  /* Apply pulse animation to button on hover */
+  .btn-outline-dark:hover {
+    animation: pulse 0.5s ease-in-out infinite;
+  }
+  
+  /* Add shadow and transition for card hover effect */
+  .text-gray-600 .rounded-lg:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Define keyframes for fadeInLeft animation for list items */
+  @keyframes spreadInList {
+    from {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+  
+  /* Apply spreadInList animation to list items */
+  .text-gray-600 .rounded-lg ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-gray-600 .rounded-lg ul li {
+    animation: spreadInList 1s ease-out;
+  }  .rounded-lg {
+    padding: 2rem; /* Adjust the padding to your preference */
+    margin: 1rem; /* Add margin for spacing between cards */
+  }
 
-li {
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 10px;
-}
+  h1 {
+    font-size: 2.5rem; /* Adjust the font size for the main title */
+  }
 
-li::before {
-    content: '\2713'; /* Unicode character for a checkmark */
-    font-size: 20px;
-    color: #2ecc71; /* Green color for the checkmark */
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+  h2 {
+    font-size: 1.5rem; /* Adjust the font size for the sub-title */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust the font size for the paragraph */
+  }
+
+  ul {
+    padding: 0; /* Remove default padding from the list */
+  }
+
+  li {
+    list-style: none; /* Remove default list styling */
+    font-size: 1rem; /* Adjust the font size for list items */
+  }
+
+  button {
+    font-size: 1.25rem; /* Adjust the font size for the button */
+  }
