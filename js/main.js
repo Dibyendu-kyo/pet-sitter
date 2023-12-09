@@ -67,3 +67,11 @@
     
 })(jQuery);
 
+function PetSitterDiv(){
+    var pett = document.getElementById('petSitter');
+    if (pett.style.display === 'none') {
+        pett.style.display = 'block';
+    } else {
+        pett.style.display = 'none';
+   }
+}

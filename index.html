@@ -101,6 +101,7 @@ footer {
                 </div>
                 <div class="navbar-nav mr-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <a href="price.html" class="nav-item nav-link">Price</a>
                     <a href="booking.html" class="nav-item nav-link">Booking</a>
@@ -131,8 +132,8 @@ footer {
                             <h3 class="text-white mb-3 d-none d-sm-block">Best Pet Services</h3>
                             <h1 class="display-3 text-white mb-3">Keep Your Pet Happy</h1>
                             <h5 class="text-white mb-3 d-none d-sm-block">Lets give them the same comfort when you are outside</h5>
-                            <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Book Now</a>
-                            <a href="./pet login.html" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Be a Pet Sitter</a>
+                            <a href="#seen"  class="btn btn-lg btn-primary mt-3 mt-md-4 px-4" >Book Now</a>
+                            <a href="" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Be a Pet Sitter</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +144,7 @@ footer {
 
     <!-- Booking Start -->
     <div class="container-fluid bg-light">
-        <div class="container">
+        <div  id="seen" class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="bg-primary py-5 px-4 px-sm-5">
@@ -173,7 +174,7 @@ footer {
                                 </select>
                             </div>
                             <div>
-                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Book Now</button>
+                                <button class="btn btn-dark btn-block border-0 py-3" type="submit" onclick="PetSitterDiv()">Book Now</button>
                             </div>
                         </form>
                     </div>
@@ -227,6 +228,44 @@ footer {
         </div>
     </div>
     <!-- Booking Start -->
+
+
+    <div class="petSitterr list" id="petSitter">
+        <div class="allCards">
+        <div class="card">
+            <img src="./Pics/photo-1494790108377-be9c29b29330.webp" alt="Pet Sitter 1">
+            <div class="info">
+                <h3>Pet Sitter 1</h3>
+                <p>Location: City, Country</p>
+                <p>Services: Dog Walking, Pet Boarding</p>
+                <p class="rating">Rating: 4.5</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./Pics/photo-1517841905240-472988babdf9.webp" alt="Pet Sitter 2">
+            <div class="info">
+                <h3>Pet Sitter 2</h3>
+                <p>Location: City, Country</p>
+                <p>Services: Cat Sitting, Grooming</p>
+                <p class="rating">Rating: 5.0</p>
+            </div>
+            </div>
+        <div class="card">
+            <img src="./Pics/photo-1517841905240-472988babdf9.webp" alt="Pet Sitter 2">
+            <div class="info">
+                <h3>Pet Sitter 3</h3>
+                <p>Location: City, Country</p>
+                <p>Services: Cat Sitting, Grooming</p>
+                <p class="rating">Rating: 5.0</p>
+            </div>
+            
+            </div>
+            
+        </div>
+        <button class="see-more-btn">See More</button>
+    </div>
+
 
 
     <!-- About Start -->
