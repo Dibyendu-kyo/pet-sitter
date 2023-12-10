@@ -17,8 +17,19 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var seeMoreButton = document.querySelector('.see-more-btn');
     
+        if (seeMoreButton) {
+            seeMoreButton.addEventListener('click', togglePetSitterDiv);
+        }
+    });
     
+    function togglePetSitterDiv() {
+        var petSitterDiv = document.getElementById('petSitter');
+        petSitterDiv.style.display = (petSitterDiv.style.display === 'none') ? 'block' : 'none';
+    }
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
