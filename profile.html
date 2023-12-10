@@ -32,7 +32,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
-    <style>
+    <!-- <style>
         body {
             background-image:url("Pics/roberto-nickson-_JGVVEfbTVQ-unsplash.jpg"); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
             
@@ -41,7 +41,7 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -94,52 +94,178 @@
 
     <br>
     <br>
+    <div style="text-align: center;">
+      <h3 style="color: orange; text-transform: uppercase; font-family: 'Arial', sans-serif; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">KOLKATA PET SITTERS</h3>
+    </div>
 
-
-    <h3 style="color: orange;">KOLKATA PET SITTERS</h3>
+   
     <hr>
 
 
 
+    <style>
+      .custom-card {
+        transition: transform 0.3s ease-in-out;
+      }
+    
+      .custom-card:hover {
+        transform: scale(1.05);
+      }
+    
+      .custom-card img {
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    
+      .custom-card h2 {
+        color: #FF4500; /* Orange color */
+        font-size: 14px;
+        font-weight: bold;
+      }
+    
+      .custom-card h1 {
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    
+      .custom-card p {
+        color: #555;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+    
+      .custom-card a {
+        color: #4B0082; /* Indigo color */
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+      }
+    
+      .custom-card a:hover {
+        color: #800080; /* Dark purple color */
+      }
+    
+      .custom-card .text-gray-400 {
+        color: #666;
+      }
+    </style>
+    
     <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <!-- First Card -->
+          <div class="p-4 md:w-1/3">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden custom-card">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://www.bridgeindia.org.uk/wp-content/uploads/2019/05/Kamini-Gupta.xa691a87f.jpg" alt="blog">
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">KOLKATA</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Sushmita Saha</h1>
+                <p class="leading-relaxed mb-3">Experienced pet owner.</p>
+                <div class="flex items-center flex-wrap">
+                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>1.2K
+                  </span>
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="p-4 md:w-1/3">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden custom-card">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./img/chris-benson-w8Nze1bsJk4-unsplash.jpg" alt="blog">
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">DARJEELING</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Subhojit Roy</h1>
+                <p class="leading-relaxed mb-3">Experienced pet owner.</p>
+                <div class="flex items-center flex-wrap">
+                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>1.2K
+                  </span>
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>6
+                  </span>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <!-- Third Card -->
+          <div class="p-4 md:w-1/3">
+            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden custom-card">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./img/hudson-hintze-CXQgs12wFHc-unsplash.jpg" alt="blog">
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">KOLKATA</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Ananya Sen</h1>
+                <p class="leading-relaxed mb-3">Experienced pet owner.</p>
+                <div class="flex items-center flex-wrap">
+                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>1.2K
+                  </span>
+                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align: center;">
+      <h3 style="color: orange; text-transform: uppercase; font-family: 'Arial', sans-serif; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">MUMBAI PET SITTERS</h3>
+    </div>
+      <hr>
+      <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
+            <!-- First Card -->
             <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://www.bridgeindia.org.uk/wp-content/uploads/2019/05/Kamini-Gupta.xa691a87f.jpg" alt="blog">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden custom-card">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./img/japheth-mast-Ga6z9QD8yvw-unsplash.jpg" alt="blog">
                 <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">KOLKATA</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Sushmita Saha</h1>
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MUMBAI</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Surya Yadav</h1>
                   <p class="leading-relaxed mb-3">Experienced pet owner.</p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
-                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>1.2K
-                    </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>6
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1oDeChJ2wf2EqpP1t-h2XfcSWZ7SdMn5ceBd-MXlEqcPotMhhCZJqPrsDv5T30J-q0Iw&usqp=CAU" alt="blog">
-                <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">KOLKATA</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Aditya Nag</h1>
-                  <p class="leading-relaxed mb-3">Experienced pet sitter.</p>
                   <div class="flex items-center flex-wrap">
                     <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
                       <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -162,14 +288,46 @@
                 </div>
               </div>
             </div>
+            <!-- Second Card -->
             <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://qph.cf2.quoracdn.net/main-qimg-58cddfa2c25fe59d0d1f106e74027498-lq" alt="blog">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden custom-card">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./img/jordan-koons--EMPljNoclg-unsplash.jpg" alt="blog">
                 <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">KOLKATA</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Saumya Das</h1>
-                  <p class="leading-relaxed mb-3">Pet sitted 15+ pets.</p>
-                  <div class="flex items-center flex-wrap ">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MUMBAI</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Ricky Khuranna</h1>
+                  <p class="leading-relaxed mb-3">Experienced pet owner.</p>
+                  <div class="flex items-center flex-wrap">
+                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            <!-- Third Card -->
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden custom-card">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./img/hudson-hintze-CXQgs12wFHc-unsplash.jpg" alt="blog">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MUMBAI</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Ahana Sharma</h1>
+                  <p class="leading-relaxed mb-3">Experienced pet owner.</p>
+                  <div class="flex items-center flex-wrap">
                     <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
                       <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14"></path>
@@ -194,50 +352,22 @@
           </div>
         </div>
       </section>
+      <div style="text-align: center;">
+        <h3 style="color: orange; text-transform: uppercase; font-family: 'Arial', sans-serif; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">CHENNAI PET SITTERS</h3>
+      </div>
 
-      <h3 style="color: orange;">MUMBAI PET SITTERS</h3>
       <hr>
-
-
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
+            <!-- First Card -->
             <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP2AbhVOgistvDuQqBycr2soFU9zC3p76wbWokuKAR1GKykrkt7njR-vNHVZMB_NpowOg&usqp=CAU" alt="blog">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden custom-card">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./img/roberto-nickson-_JGVVEfbTVQ-unsplash.jpg" alt="blog">
                 <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MUMBAI</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Vishal Sharma</h1>
-                  <p class="leading-relaxed mb-3">Pet sitted 50+ pets.</p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
-                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>1.2K
-                    </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>6
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202301/aarti-sixteen_nine_1.jpg?size=948:533" alt="blog">
-                <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MUMBAI</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Ishika Sen</h1>
-                  <p class="leading-relaxed mb-3">Experienced Pet sitter.</p>
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CHENNAI</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Indra Ashwin</h1>
+                  <p class="leading-relaxed mb-3">Experienced pet owner.</p>
                   <div class="flex items-center flex-wrap">
                     <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
                       <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -260,14 +390,46 @@
                 </div>
               </div>
             </div>
+            <!-- Second Card -->
             <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://t3.ftcdn.net/jpg/03/03/56/30/360_F_303563080_I1Gklz8QdPdwYgLzDUFObMl2kuvQfdXn.jpg" alt="blog">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden custom-card">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./img/roberto-nickson-q9nZUFC1nTw-unsplash.jpg" alt="blog">
                 <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MUMBAI</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Haniya Mirza</h1>
-                  <p class="leading-relaxed mb-3">Pet Sitted 30+ pets.</p>
-                  <div class="flex items-center flex-wrap ">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CHENNAI</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Rakhi Gopalan</h1>
+                  <p class="leading-relaxed mb-3">Experienced pet owner.</p>
+                  <div class="flex items-center flex-wrap">
+                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            <!-- Third Card -->
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden custom-card">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./img/tadeusz-lakota-tk5LWGNiWVs-unsplash.jpg" alt="blog">
+                <div class="p-6">   
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CHENNAI</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Jayam Arjun</h1>
+                  <p class="leading-relaxed mb-3">Experienced pet owner.</p>
+                  <div class="flex items-center flex-wrap">
                     <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Connect
                       <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14"></path>
@@ -292,181 +454,6 @@
           </div>
         </div>
       </section>
-
-      <h3 style="color: orange;">CHENNAI PET SITTERS</h3>
-      <hr>
-
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
-                <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-                  <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>1.2K
-                    </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>6
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog">
-                <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-                  <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                  <div class="flex items-center flex-wrap">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>1.2K
-                    </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>6
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog">
-                <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-                  <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>1.2K
-                    </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>6
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-      <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-4 col-md-12 mb-5">
-                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">Pet</span>Lover</h1>
-                <p class="m-0">Ipsum amet sed vero et lorem stet eos ut, labore sed sed stet sea est ipsum ut. Volup amet ea sanct ipsum, dolore vero lorem no duo eirmod. Eirmod amet ipsum no ipsum lorem clita ut. Ut sed sit lorem ea lorem sed, amet stet sit sea ea diam tempor kasd kasd. Diam nonumy etsit tempor ut sed diam sed et ea</p>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-primary mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>Location, City, Country</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                        <div class="d-flex justify-content-start mt-4">
-                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-primary mb-4">Popular Links</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Team</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-primary mb-4">Newsletter</h5>
-                        <form action="">
-                            <div class="form-group">
-                                <input type="text" class="form-control border-0" placeholder="Your Name" required="required" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control border-0" placeholder="Your Email" required="required" />
-                            </div>
-                            <div>
-                                <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Submit Now</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">
-                    &copy; <a class="text-white font-weight-bold" href="https://freewebsitecode.com">Your Site Name</a>. All Rights Reserved. Designed by
-                    <a class="text-white font-weight-bold" href="https://freewebsitecode.com">Free Website Code</a>
-                </p>
-            </div>
-            <div class="col-md-6 text-center text-md-right">
-                <ul class="nav d-inline-flex">
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Help</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
