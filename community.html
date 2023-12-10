@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PetLover - Pet Care Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Animation Styles */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hover Effect */
+        .d-flex.flex-column.text-center.bg-white.mb-2 {
+            animation: fadeIn 1s ease-out;
+            transition: transform 0.3s ease-out;
+        }
+
+        .d-flex.flex-column.text-center.bg-white.mb-2:hover {
+            transform: scale(1.05);
+        }
+
+        /* Community Section Styles */
+        #community-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .post-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .post {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        #postModal {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="row py-3 px-lg-5">
+                    <div class="col-lg-4">
+                        <a href="" class="navbar-brand d-none d-lg-block">
+                            <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Pet Sitter</h1>
+                        </a>
+                    </div>
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="price.html" class="nav-item nav-link">Price</a>
+                        <a href="booking.html" class="nav-item nav-link">Community</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Blog</a>
+                                <a href="./policy.html" class="dropdown-item">Our Policy</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="./contact.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a>
+                </div>
+        </nav>
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="container-fluid p-0">
+        <!-- Your navigation code here -->
+    </div>
+
+    <!-- Community Section -->
+    <section id="community-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Community</h2>
+
+            <!-- Post Container -->
+            <div class="post-container">
+                <!-- Example Post -->
+                <div class="post">
+                    <h4>Aalok Shaw</h4>
+                    <p>Hey any one want a pet sitter for their pet connect with me</p>
+                    <small>Posted on: December 20, 2023</small>
+                </div>
+
+                <!-- More posts go here... -->
+
+            </div>
+
+            <!-- Add New Post Button -->
+            <button class="btn btn-primary" data-toggle="modal" data-target="#postModal">Add New Post</button>
+        </div>
+    </section>
+
+    <!-- Post Modal -->
+    <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="postModalLabel">Add New Post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="postContent">Write your post:</label>
+                            <textarea class="form-control" id="postContent" name="postContent" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="addPost()">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+ <!-- JavaScript Libraries -->
+   
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Function to add a new post
+        function addPost() {
+            // Get post content from the form
+            var postContent = $("#postContent").val();
+
+            // Create a new post element
+            var newPost = `
+                <div class="post">
+                    <h4>Aalok Shaw</h4>
+                    <p>${postContent}</p>
+                    <small>Posted on: ${getCurrentDate()}</small>
+                </div>
+            `;
+
+            // Append the new post to the correct post container
+            $("#community-section .post-container").append(newPost);
+
+            // Clear the post content in the form
+            $("#postContent").val("");
+
+            // Close the modal
+            $("#postModal").modal("hide");
+        }
+
+        // Function to get the current date in the format: Month Day, Year
+        function getCurrentDate() {
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return new Date().toLocaleDateString(undefined, options);
+        }
+    </script>
+
+</body>
+
+</html>
