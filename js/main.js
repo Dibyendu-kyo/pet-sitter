@@ -75,3 +75,7 @@ function PetSitterDiv(){
         pett.style.display = 'none';
    }
 }
+
+function openProfilePage() {
+    window.location.href = 'profile.html';
+}
