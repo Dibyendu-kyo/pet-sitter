@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PetLover - Pet Care Website Template</title>
+    <title>Petsree</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -234,39 +234,38 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     
         <script>
-            // Function to like a post
+           
             function likePost(button) {
                 var post = $(button).closest(".post");
                 var likeButton = $(button);
     
-                // Check if the post is already liked
+                
                 if (likeButton.hasClass("btn-primary")) {
                     likeButton.removeClass("btn-primary");
-                    // Update local storage or any other data storage mechanism
+                  
                 } else {
                     likeButton.addClass("btn-primary");
-                    // Update local storage or any other data storage mechanism
+                   
                 }
             }
     
-            // Function to open the comment modal
+            
             function openCommentModal(button) {
                 var post = $(button).closest(".post");
-                // Call function to display existing comments
+              
                 displayComments(post);
             }
     
-            // Function to open the message modal
+          
             function openMessageModal(button) {
                 var post = $(button).closest(".post");
-                // Implement logic to open the message modal
+            
             }
     
             // Function to display comments
             function displayComments(post) {
                 var commentsContainer = post.find(".comments");
-                // Retrieve comments from local storage or any other data storage mechanism
-                // Display comments in the commentsContainer
+               
             }
     
             // Function to add a new comment
@@ -286,21 +285,18 @@
                     commentsContainer.append(newComment);
                 }
     
-                // Update local storage or any other data storage mechanism
-    
-                // Clear the comment content in the form
+               
                 $("#commentContent").val("");
     
-                // Close the modal
                 $(".modal.show").modal("hide");
             }
     
-            // Function to send a message
+         
             function sendMessage(post, messageContent) {
-                // Implement messaging functionality
+                
             }
     
-            // Function to add a new post
+        
             function addPost() {
                 var postContent = $("#postContent").val();
                 var newPost = `
@@ -313,16 +309,12 @@
     
                 $("#community-section .post-container").prepend(newPost);
     
-                // Update local storage or any other data storage mechanism
-    
-                // Clear the post content in the form
+              
                 $("#postContent").val("");
     
-                // Close the modal
+               
                 $("#postModal").modal("hide");
             }
-    
-            // Function to get the current date in the format: Month Day, Year
             function getCurrentDate() {
                 var options = { year: 'numeric', month: 'long', day: 'numeric' };
                 return new Date().toLocaleDateString(undefined, options);
