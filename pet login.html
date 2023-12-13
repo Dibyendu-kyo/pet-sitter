@@ -51,8 +51,8 @@
             <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                 <div class="row py-3 px-lg-5">
                     <div class="col-lg-4">
-                        <a href="" class="navbar-brand d-none d-lg-block">
-                            <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Pet Sitter</h1>
+                        <a href="./index.html" class="navbar-brand d-none d-lg-block">
+                            <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Petsree</h1>
                         </a>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                         <label for="phoneNo" class="form-label text-white">Phone no:</label>
                         <input type="text" class="form-control" id="phoneNo" name="phoneNo" required>
                     </div>
-                    <button type="button" class="btn btn-success" onclick="registerUser()">Submit</button>
+                    <a class="btn btn-success" href="./index.html">Submit</a>
                 </form>
                 <div id="registrationResult"></div>
             </div>
@@ -110,8 +110,8 @@
                     const username = document.getElementById('username').value;
                     const email = document.getElementById('email').value;
                     const petType = document.getElementById('petType').value;
-                    const location = document.getElementById('location').value;
                     const phoneNo = document.getElementById('phoneNo').value;
+                    window.location.href = "./index.html";
                 
                     // Display the user's information (for demonstration purposes)
                     const resultContainer = document.getElementById('registrationResult');
@@ -119,9 +119,9 @@
                         <h2>Registration Successful</h2>
                         <p>Username: ${username}</p>
                         <p>Email: ${email}</p>
-                        <p>Pet Type: ${petType}</p>
                         <p>Location: ${location}</p>
                         <p>Phone No: ${phoneNo}</p>
+                        
                     `;
                 
                     // Redirect to a different page after registration
