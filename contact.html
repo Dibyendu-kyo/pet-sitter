@@ -207,13 +207,7 @@
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <a href="price.html" class="nav-item nav-link">Price</a>
                     <a href="./community.html" class="nav-item nav-link">Community</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="blog.html" class="dropdown-item">Blog</a>
-                            <a href="./policy.html" class="dropdown-item">Our Policy</a>
-                        </div>
-                    </div>
+                    <a href="./policy.html" class="nav-item nav-link">Our policy</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <a href="./contact.html" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a>
@@ -257,7 +251,14 @@
                 <label for="message" class="text-gray-900 text-lg mb-1 font-medium title-font">Message</label>
                 <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
             </div>
-            <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+            <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="redirectToContact()">Submit</button>
+
+<script>
+    function redirectToContact() {
+        // Redirect to the "contact" page
+        window.location.href = "./contact.html";
+    }
+</script>
             <p class="text-xs text-gray-500 mt-3">Your feedback is important to us. Thank you for reaching out!</p>
         </div>
     </div>
